@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,5 +15,40 @@
     <div class="image">
     <img src="./assets/logo_3.png">
     </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://sportspage-feeds.p.rapidapi.com/games",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "sportspage-feeds.p.rapidapi.com",
+		"x-rapidapi-key": "441f5fff35msh66538a1f641bd16p1624c8jsnf551a30cbe66"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+var queryURL = {
+    "url": "https://api.sportradar.us/nfl-images-t3/ap/logos/1bcd10ac-11e1-4373-89df-c77ee52f0f05/original.jpeg?api_key=gdptxcf7y9523h9vj4rhgpuv",
+    "method": "GET",
+    "crossOrigin": null
+}
+
+$.ajax({
+    url: queryURL,
+    method: "GET"
+}).then(function(image){
+    console.log(image)
+        })
+
+
+    </script>
+
 </body>
 </html>
