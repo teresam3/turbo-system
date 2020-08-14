@@ -23,7 +23,7 @@ $.ajax(settings).done(function (response) {
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://newscatcher.p.rapidapi.com/v1/search?media=True&sort_by=relevancy&lang=en&page=1&q=NFL",
+	"url": "https://newscatcher.p.rapidapi.com/v1/search?media=True&sort_by=relevancy&lang=en&page=1&q=NBA",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "newscatcher.p.rapidapi.com",
@@ -33,4 +33,5 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
+	console.log(response.articles[0].summary)
 });
