@@ -15,7 +15,6 @@ $.ajax(settings).done(function (response) {
     $(".M0").text(response.articles[0].summary)
     $(".M1").text(response.articles[1].summary)
     $(".M2").text(response.articles[2].summary)
-	$(".M3").text(response.articles[3].summary)
 	$(".MLB1").text(response.articles[1].link)
     $(".MLB2").text(response.articles[2].link)
 	$(".MLB3").text(response.articles[3].link)

@@ -35,19 +35,3 @@ $.ajax(settings).done(function (response) {
 	console.log(response);
 	console.log(response.articles[0].summary)
 });
-
-var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://thesportsdb.p.rapidapi.com/1/eventstv.php?s=Sports&d=2020-07-07",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "thesportsdb.p.rapidapi.com",
-		"x-rapidapi-key": "979cf787b4msh8d62d7690b6a369p11f350jsn04f3498cc27b"
-	}
-}
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
-	$(".PIC").text(response.players[0])
-});
