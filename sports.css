@@ -1,3 +1,15 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Staatliches', cursive;
+}
+
+ul {
+  list-style-type: none;
+}
 
 .holy-grail-grid {
     display: -ms-grid;
@@ -25,12 +37,22 @@
 
   .top-bar {
     background-image: url('./assets/images/football_bg.jpeg');
+    margin-bottom: 5px;
   }
 
   .top-bar .menu a{
     color: black;
     font-weight: bold;
   }
+
+  .header-img {
+    width: 100%;
+    height: auto;
+  }
+
+.head-img {
+  min-width: 100%;
+}
 
   .top-bar .menu li {
     display: -webkit-flex;
@@ -67,15 +89,13 @@
     }
   }
   
-  .holy-grail-header,
   .holy-grail-left,
   .holy-grail-middle,
   .holy-grail-right,
   .holy-grail-footer {
     padding: 1rem;
-    border: 1px solid #ededed;
-    background-color: #ededed;
-
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
   }
   
   .holy-grail-header {
@@ -84,6 +104,8 @@
     grid-column-end: 4;
     -ms-grid-row: 1;
         grid-row-start: 1;
+    padding: 0 px;
+    width: 100vw;
   }
   
   @media screen and (max-width: 60em) {
