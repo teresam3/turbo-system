@@ -5,24 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
     <link rel="stylesheet" href="sports.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <title>NBA</title>
 </head>
 <body>
-    <ul class="menu">
-        <li class="menu-text">Play-by-Play</li>
-        <li><a href="./mlb.html">MLB</a></li>
-        <li><a href="./nfl.html">NFL</a></li>
-        <li><a href="./nba.html">NBA</a></li>
+      <ul class="menu">
+        <div class="top-content">
+          <div class="top-bar">
+            <ul class="menu">
+                <li class="menu-text"><a href="./index.html">Play-by-Play</li></a>
+                  <div class="dropdown">
+                    <button class="dropbtn"><a href="./mlb.html">MLB</button></a>
+                   <!----- <div class="dropdown-content">
+                      <a href="#">Enter teams here</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div> --->
+                  </div>
+               
+                <div class="dropdown">
+                  <button class="dropbtn"><a href="./nfl.html">NFL</button></a>
+                <!-----  <div class="dropdown-content">
+                    <a href="#">Enter teams here</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div> --->
+                </div>
+                
+                <div class="dropdown">
+                  <button class="dropbtn"><a href="./NBA.html">NBA</button></a>
+                  <!-----    <div class="dropdown-content">
+                    <a href="#">Enter teams here</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div> --->
+                </div>
+            </ul>
+          </div>
+         
+      </ul>
     </ul>
     <div class="holy-grail-grid">
         <div class="holy-grail-header">
-          <h3>Header</h3>
+          <h3>National Basketball Association</h3>
         </div>
       
         <div class="holy-grail-left">
           <h3>Nav</h3>
           <ul>
-            <li><a href="#">Link 1</a></li>
+            <li><a href="#" class="NBA">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
             <li><a href="#">Link 3</a></li>
           </ul>
@@ -30,10 +61,10 @@
       
         <div class="holy-grail-middle">
           <h3>Content</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+          <p class="A0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+          <p class="A1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+          <p class="A2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
+          <p class="A3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias mollitia debitis at atque temporibus ratione molestiae id eos, cupiditate numquam dolor vero totam, quisquam libero voluptas. Animi ipsa cumque, tempore.</p>
         </div>
       
         <div class="holy-grail-right">
@@ -50,7 +81,10 @@
         </div>
       
       </div>
-      
+
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="nbascript.js"></script>
       
 </body>
 </html>
