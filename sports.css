@@ -1,6 +1,3 @@
-body {
-    background-image: url('./assets/images/football_bg.jpeg');
-  }
 
 .holy-grail-grid {
     display: -ms-grid;
@@ -13,10 +10,10 @@ body {
     height: 100vh;
   }
 
- .nav {
-   background-color: lime;
- }
-  
+  .top-bar, .top-bar ul {
+    background-color: transparent;
+  } 
+
   .menu-text{
     font-family: 'Staatliches', cursive;
     font-size: 70px;
@@ -27,7 +24,7 @@ body {
   }
 
   .top-bar {
-    background: lime;
+    background-image: url('./assets/images/football_bg.jpeg');
   }
 
   .top-bar .menu a{

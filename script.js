@@ -39,7 +39,7 @@ $.ajax(settings).done(function (response) {
 var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://thesportsdb.p.rapidapi.com/1/searchloves.php?u=Lakers",
+	"url": "https://thesportsdb.p.rapidapi.com/1/eventstv.php?s=Sports&d=2018-07-07",
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "thesportsdb.p.rapidapi.com",

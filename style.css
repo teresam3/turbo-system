@@ -1,7 +1,4 @@
-/* background for site */
-body {
-    background-image: url('./assets/images/football_bg.jpeg');
-  }
+
 /* main */
 .hero-full-screen {
     height: 100vh;
@@ -32,7 +29,7 @@ body {
   
   /* navbar */
   .hero-full-screen .top-bar {
-    background: lime;
+    background-image: url('./assets/images/football_bg.jpeg');
   }
  
   /* list for navbar */
