@@ -1,7 +1,6 @@
 
 /* main */
 .hero-full-screen {
-    height: 100vh;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -22,7 +21,19 @@
     background: transparent;
   }
 
-  /* the nav bar */
+  .main-box {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  }
+
+  .home {
+  font-family:'Staatliches', cursive;
+  text-align: center;
+  margin: 0;
+}
+ 
+/* the nav bar */
   .hero-full-screen .top-content {
     width: 100%;
   }
@@ -53,11 +64,6 @@
     font-weight: bold;
   }
   
-  /* navbar hover actions */
-  /* .hero-full-screen .top-bar .menu :hover {
-    color: orange
-  } */
-
 /* container for all content */
 .main-box {
     display: -webkit-flex;
@@ -75,8 +81,8 @@
     margin-bottom: 0;
   }
 
-/* img styling */
-  .main-box .added-img {
+/* page styling */
+  .main-box {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -85,12 +91,12 @@
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
   }
- 
-  /* img styling */
-  .main-box .added-img img {
-    width: 100%;
-  }
-  
+
+/* img stylng */
+.main-img {
+  min-width: 100vw;
+}
+
 /* first box styling */
   .main-box .first-block {
     padding: 1rem;
