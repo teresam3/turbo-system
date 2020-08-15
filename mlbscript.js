@@ -15,7 +15,13 @@ $.ajax(settings).done(function (response) {
     $(".M0").text(response.articles[0].summary)
     $(".M1").text(response.articles[1].summary)
     $(".M2").text(response.articles[2].summary)
-    $(".A3").text(response.articles[3].summary)
+	$(".M3").text(response.articles[3].summary)
+	$(".MLB1").text(response.articles[1].link)
+    $(".MLB2").text(response.articles[2].link)
+	$(".MLB3").text(response.articles[3].link)
+	$(".image1").prepend($('<img>',{src: response.articles[0].media}))
+    $(".image2").prepend($('<img>',{src: response.articles[1].media}))
+	$(".image3").prepend($('<img>',{src: response.articles[2].media}))
     
 
 });
