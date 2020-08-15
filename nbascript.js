@@ -11,14 +11,18 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
-    console.log(response.articles[0].summary)
+	console.log(response.articles[0].summary)
+	console.log(response.articles[0].media)
     $(".A0").text(response.articles[0].summary)
     $(".A1").text(response.articles[1].summary)
     $(".A2").text(response.articles[2].summary)
 	$(".A3").text(response.articles[3].summary)
-	$(".NBA1").text(response.articles[1].clean_url)
-    $(".NBA2").text(response.articles[2].clean_url)
-	$(".NBA3").text(response.articles[3].clean_url)
+	$(".NBA1").text(response.articles[1].link)
+    $(".NBA2").text(response.articles[2].link)
+	$(".NBA3").text(response.articles[3].link)
+	$(".image1").prepend($('<img>',{src: response.articles[0].media}))
+    $(".image2").prepend($('<img>',{src: response.articles[1].media}))
+	$(".image3").prepend($('<img>',{src: response.articles[2].media}))
 });
 
 
