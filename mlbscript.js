@@ -1,17 +1,46 @@
-/*var settings = {
+
+
+var settings = {
 	"async": true,
 	"crossDomain": true,
-	"url": "https://therundown-therundown-v1.p.rapidapi.com/sports/2/events/2020-02-02?include=all_periods&include=scores&offset=0",
+	"url": "https://sportspage-feeds.p.rapidapi.com/games?league=MLB",
 	"method": "GET",
 	"headers": {
-		"x-rapidapi-host": "therundown-therundown-v1.p.rapidapi.com",
-	"url": "https://newscatcher.p.rapidapi.com/v1/search?media=True&sort_by=relevancy&lang=en&page=1&q=MLB",
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "newscatcher.p.rapidapi.com",
-		"x-rapidapi-key": "441f5fff35msh66538a1f641bd16p1624c8jsnf551a30cbe66"
+		"x-rapidapi-host": "sportspage-feeds.p.rapidapi.com",
+		"x-rapidapi-key": "835907ab9emshe7e0ee47d7df2acp1b926djsn8ec7b1d4b220"
 	}
-}*/
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+	
+	var newRow = $("<div>")
+	
+    for(var i = 0; i<25; i++){
+		var scheduele = $("<div>").text(response.results[i].summary )
+		var status = $("<div>").text("Status:" + response.results[i].status) 
+		var scoreAway = $("<td>").text("Away score:" + response.results[i].scoreboard.score.away + "--") 
+		var scoreHome = $("<td>").text("Home score:" + response.results[i].scoreboard.score.home )
+		var seperation =  $("<div>").text("--------------------------------------------------" )
+		newRow.append(scheduele)
+		newRow.append(status)
+		newRow.append(scoreAway)
+		newRow.append(scoreHome)
+		newRow.append(seperation)
+	$(".A1").append(newRow)
+
+   
+	}
+
+});
+
+
+
+
+
+
+
+
 
 $.ajax(settings).done(function (response) {
 	console.log(response);
