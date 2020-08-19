@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 
 
-var settings = {
+var settings2 = {
 	"async": true,
 	"crossDomain": true,
 	"url": "https://sportspage-feeds.p.rapidapi.com/games?league=MLB",
@@ -12,12 +11,12 @@ var settings = {
 	}
 }
 
-$.ajax(settings).done(function (response) {
+$.ajax(settings2).done(function (response) {
 	console.log(response);
 	
 	var newRow = $("<div>")
 	
-    for(var i = 0; i<25; i++){
+    for(var i = 0; i < 25; i++){
 		var scheduele = $("<div>").text(response.results[i].summary )
 		var status = $("<div>").text("Status:" + response.results[i].status) 
 		var scoreAway = $("<td>").text("Away score:" + response.results[i].scoreboard.score.away + "--") 
@@ -43,14 +42,11 @@ $.ajax(settings).done(function (response) {
 
 
 
-$.ajax(settings).done(function (response) {
+/*$.ajax(settings).done(function (response) {
 	console.log(response);
-    console.log(response.articles[0].summary)
+    console.log(response.articles[0].summary)*/
     
     var settings = {
-=======
-	var settings = {
->>>>>>> 28f903b7a949a82c93e7583f3297663fa1dc9ed2
 	"async": true,
 	"crossDomain": true,
 	"url": "https://newscatcher.p.rapidapi.com/v1/search?media=True&sort_by=relevancy&lang=en&page=1&q=MLB",
@@ -67,13 +63,10 @@ $.ajax(settings).done(function (response) {
     $(".M0").text(response.articles[0].summary)
     $(".M1").text(response.articles[1].summary)
     $(".M2").text(response.articles[2].summary)
-	$(".MLB1").text(response.articles[1].link)
-    $(".MLB2").text(response.articles[2].link)
-	$(".MLB3").text(response.articles[3].link)
-	$(".image1").prepend($('<img>',{src: response.articles[0].media}))
+    $(".A3").text(response.articles[3].summary)
+    $(".image1").prepend($('<img>',{src: response.articles[0].media}))
     $(".image2").prepend($('<img>',{src: response.articles[1].media}))
 	$(".image3").prepend($('<img>',{src: response.articles[2].media}))
-    
 
 });
     
