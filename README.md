@@ -8,3 +8,6 @@ Accompanying images enhance user experience
 
 Link to Deployed Application:
 https://teresam3.github.io/turbo-system/
+
+Link to GitHub Repository:
+https://github.com/teresam3/turbo-system
