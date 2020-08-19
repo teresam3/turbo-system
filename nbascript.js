@@ -24,7 +24,7 @@ $.ajax(settings).done(function (response) {
 	$(".image3").prepend($('<img>',{src: response.articles[2].media}))
 });
 
-var settings = {
+var settings2 = {
 	"async": true,
 	"crossDomain": true,
 	"url": "https://sportspage-feeds.p.rapidapi.com/games?league=NBA",
@@ -35,7 +35,7 @@ var settings = {
 	}
 }
 
-$.ajax(settings).done(function (response) {
+$.ajax(settings2).done(function (response) {
 	console.log(response);
 	
 	var newRow = $("<div>")
